@@ -1,9 +1,9 @@
 <template>
   <v-container fluid>
     <v-slide-y-transition mode="out-in">
-      <v-layout >
+      <v-layout column align-center>
        
-       
+        Bem vindo ao crud de cliente
       </v-layout>
     </v-slide-y-transition>
   </v-container>

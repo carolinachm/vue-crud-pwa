@@ -1,11 +1,16 @@
 <template>
-  <v-container>
-    <v-layout>
-      <v-flex lg4 md6 sm10 xs12>
-        <v-card>
-          <v-card-text>Cliente</v-card-text>
-        </v-card>
-      </v-flex>
-     
-    </v-layout>
-  </v-container>
+    <v-container>
+        
+        <v-layout row>
+           
+            <v-flex>
+                 <v-form>
+                     <v-text-field label="Nome" required></v-text-field>
+                 </v-form>
+               
+                 <v-btn  color="info">Salvar</v-btn>
+                <v-btn>Cancelar</v-btn>
+            </v-flex>
+        </v-layout>
+    </v-container>
+</template>
