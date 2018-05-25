@@ -9,16 +9,16 @@
         <v-card-text>
           <v-container grid-list-md>
             <v-layout wrap>
-              <v-flex xs12 sm6 md4>
+              <v-flex xs12>
                 <v-text-field v-model="editedItem.nome" label="Nome"></v-text-field>
               </v-flex>
-              <v-flex xs12 sm6 md4>
+              <v-flex xs12>
                 <v-text-field v-model="editedItem.cpf" label="CPF"></v-text-field>
               </v-flex>
-              <v-flex xs12 sm6 md4>
+              <v-flex xs12>
                 <v-text-field v-model="editedItem.telefone" label="Telefone"></v-text-field>
               </v-flex>
-              <v-flex xs12 sm6 md4>
+              <v-flex xs12>
                 <v-text-field v-model="editedItem.email" label="E-mail"></v-text-field>
               </v-flex>
             </v-layout>
@@ -74,20 +74,12 @@
 
 <script>
 
-import axios from 'axios'
-
 export default {
   data: () => ({
     search: '',
     pagination: {},
     dialog: false,
     headers: [
-      {
-        text: 'id',
-        align: 'left',
-        sortable: false,
-        value: 'id'
-      },
       { text: 'Nome', value: 'nome' },
       { text: 'CPF', value: 'cpf' },
       { text: 'Telefone', value: 'telefone' },
@@ -111,7 +103,7 @@ export default {
 
   computed: {
     formTitle () {
-      return this.editedIndex === -1 ? 'New Item' : 'Edit Item'
+      return this.editedIndex === -1 ? 'Novo Cliente' : 'Editar Cliente'
     }
   },
   watch: {

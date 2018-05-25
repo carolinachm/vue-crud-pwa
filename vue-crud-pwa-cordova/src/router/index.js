@@ -5,6 +5,7 @@ import Cliente from '@/components/Cliente'
 import Login from '@/components/Login'
 import Galeria from '@/components/Galeria'
 import Categoria from '@/components/Categoria'
+import Cadastro from '@/components/Cadastro'
 
 Vue.use(Router)
 
@@ -14,6 +15,11 @@ export default new Router({
       path: '/',
       name: 'Hello',
       component: Hello
+    },
+    {
+      path: '/cadastro',
+      name: 'Cadastro',
+      component: Cadastro
     },
     {
       path: '/login',
